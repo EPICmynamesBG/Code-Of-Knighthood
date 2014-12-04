@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/stonebackground_h"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    <RelativeLayout
+        android:id="@+id/text_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/topBottomMargins"
+        android:layout_marginLeft="@dimen/sideMargins"
+        android:layout_marginRight="@dimen/sideMargins"
+        android:layout_marginTop="@dimen/topBottomMargins"
+         >
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/topBottomMargins"
+            android:layout_marginTop="@dimen/topBottomMargins"
+            android:scrollbars="vertical"
+            android:text="@string/text1"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_1"
+            android:layout_marginBottom="@dimen/topBottomMargins"
+            android:scrollbars="vertical"
+            android:text="@string/text2"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_2"
+            android:layout_marginBottom="@dimen/topBottomMargins"
+            android:scrollbars="vertical"
+            android:text="@string/text3"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

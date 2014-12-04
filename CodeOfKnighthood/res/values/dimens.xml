@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">24sp</dimen>
+    <dimen name="sideMargins">10dp</dimen>
+    <dimen name="topBottomMargins">10dp</dimen>
+</resources>
