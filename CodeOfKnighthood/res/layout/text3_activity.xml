@@ -24,7 +24,7 @@
             android:layout_marginTop="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text1"
-            android:textColor="@color/DarkRed"
+            android:textColor="@color/textBlue"
             android:textSize="@dimen/textSize"
             android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text2"
-            android:textColor="@color/DarkRed"
+            android:textColor="@color/textBlue"
             android:textSize="@dimen/textSize"
             android:textStyle="bold" />
 
@@ -48,7 +48,7 @@
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text3"
-            android:textColor="@color/DarkRed"
+            android:textColor="@color/textBlue"
             android:textSize="@dimen/textSize"
             android:textStyle="bold" />
     </RelativeLayout>

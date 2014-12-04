@@ -15,11 +15,11 @@ public class TextParser {
 		assetFiles=assets;
 	}
 	
-	public static String parseHelpFile(String filename){
+	public static String parseFile(String filename){
 		String output;
 		InputStream is = null;
 		try {
-			is = assetFiles.open("txt/"+filename);
+			is = assetFiles.open("txt/"+filename+".txt");
 			output=readTextFile(is);
 		} 
 		catch (IOException e) {
