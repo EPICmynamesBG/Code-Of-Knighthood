@@ -1,6 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/stonebackground_v"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center_horizontal"

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/stone_wall"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   android:orientation="vertical"
   >
+
+    <ImageView
+        android:id="@+id/shield"
+        android:contentDescription="@string/CDshield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shield" />
+
   <android.support.v4.view.ViewPager
     android:id="@+id/viewpager"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     />
-</LinearLayout>
+
+</RelativeLayout>

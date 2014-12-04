@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     android:background="@color/gold" >
 
+    <ImageView
+        android:id="@+id/star_border"
+        android:contentDescription="@string/CDstarBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star_border" />
+
     <Button
         android:id="@+id/beginButton"
         android:layout_width="fill_parent"
@@ -15,5 +22,14 @@
         android:text="@string/startButton"
         android:textSize="@dimen/textSize"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/knight"
+        android:contentDescription="@string/CDknight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/knight_2" />
 
 </RelativeLayout>

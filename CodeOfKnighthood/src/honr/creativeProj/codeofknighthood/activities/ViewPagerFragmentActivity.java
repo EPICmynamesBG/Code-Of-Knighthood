@@ -6,13 +6,14 @@ import honr.creativeProj.codeofknighthood.R;
 
 import java.util.List;
 import java.util.Vector;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.Window;
+import android.view.WindowManager;
 
- 
-//http://thepseudocoder.wordpress.com/2011/10/05/android-page-swiping-using-viewpager/
  
 public class ViewPagerFragmentActivity extends FragmentActivity{
 
@@ -21,10 +22,19 @@ public class ViewPagerFragmentActivity extends FragmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setFullScreen();
         super.setContentView(R.layout.viewpager_layout);
         //Initialize the pager
         this.initialisePaging();
     }
+    
+    private void setFullScreen() {
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		setContentView(R.layout.main_activity);
+	}
  
     private void initialisePaging() {
  
