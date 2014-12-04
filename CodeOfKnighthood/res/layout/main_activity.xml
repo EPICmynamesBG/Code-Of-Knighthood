@@ -7,8 +7,9 @@
     <ImageView
         android:id="@+id/star_border"
         android:contentDescription="@string/CDstarBorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:src="@drawable/star_border" />
 
     <Button
