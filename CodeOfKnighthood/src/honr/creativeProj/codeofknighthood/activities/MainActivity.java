@@ -19,8 +19,8 @@ public class MainActivity extends Activity{
 		setContentView(R.layout.main_activity);
 		
 		
-		//Button button = (Button) findViewById(R.id.startButton);
-		//button.setOnClickListener(startClick);
+		Button button = (Button) findViewById(R.id.beginButton);
+		button.setOnClickListener(startClick);
 		
 	}
 
@@ -44,8 +44,8 @@ public class MainActivity extends Activity{
 	View.OnClickListener startClick = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			
-			//MainActivity.this.startActivity(question1);
+			Intent content = new Intent(MainActivity.this, ViewPagerFragmentActivity.class);
+			MainActivity.this.startActivity(content);
 		}
 	};
 	

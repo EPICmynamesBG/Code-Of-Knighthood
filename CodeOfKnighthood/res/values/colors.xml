@@ -2,4 +2,6 @@
 <resources>
     <color name="blue">#0ebbe0</color>
     <color name="gold">#f6d312</color>
+    <color name="DarkBlue">#051A4E</color>
+    <color name="DarkRed">#750000</color>
 </resources>

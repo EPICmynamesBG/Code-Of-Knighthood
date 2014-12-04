@@ -1,43 +1,34 @@
 package honr.creativeProj.codeofknighthood.activities;
-
-
+ 
 import honr.creativeProj.codeofknighthood.R;
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
-
-public class Text1Activity extends Activity{
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState){
-		super.onCreate(savedInstanceState);
-		setFullScreen();
-		setContentView(R.layout.text1_activity);
-		
-		
-		//Button button = (Button) findViewById(R.id.startButton);
-		//button.setOnClickListener(startClick);
-		
-	}
-
-	private void setFullScreen() {
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		setContentView(R.layout.text1_activity);
-	}
-	
-	View.OnClickListener startClick = new View.OnClickListener() {
-		@Override
-		public void onClick(View v) {
-			
-			//MainActivity.this.startActivity(question1);
-		}
-	};
-	
-	
+import android.view.ViewGroup;
+import android.widget.ScrollView;
+ 
+ 
+/**
+ * @author mwho
+ *
+ */
+public class Text1Activity extends Fragment {
+    /** (non-Javadoc)
+     * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
+     */
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        if (container == null) {
+            // We have different layouts, and in one of them this
+            // fragment's containing frame doesn't exist.  The fragment
+            // may still be created from its saved state, but there is
+            // no reason to try to create its view hierarchy because it
+            // won't be displayed.  Note this is not needed -- we could
+            // just run the code below, where we would create and return
+            // the view hierarchy; it would just never be used.
+            return null;
+        }
+        return (ScrollView)inflater.inflate(R.layout.text1_activity, container, false);
+    }
 }

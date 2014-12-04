@@ -1,27 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
+    android:background="@drawable/stonebackground_v"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@drawable/stonebackground_v"
     android:scrollbarAlwaysDrawVerticalTrack="true" >
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
     <RelativeLayout
         android:id="@+id/text_all"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/topBottomMargins"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="@dimen/sideMargins"
         android:layout_marginRight="@dimen/sideMargins"
-        android:layout_marginTop="15dp" >
+        android:layout_marginTop="@dimen/topBottomMargins"
+         >
 
         <TextView
             android:id="@+id/text_1"
@@ -59,7 +53,5 @@
             android:textSize="@dimen/textSize"
             android:textStyle="bold" />
     </RelativeLayout>
-    
-    </ScrollView>
 
-</RelativeLayout>
+</ScrollView>

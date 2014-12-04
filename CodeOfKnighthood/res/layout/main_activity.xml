@@ -4,4 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/gold" >
 
+    <Button
+        android:id="@+id/beginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/topBottomMargins"
+        android:background="@drawable/begin_button"
+        android:text="@string/startButton"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold" />
+
 </RelativeLayout>
