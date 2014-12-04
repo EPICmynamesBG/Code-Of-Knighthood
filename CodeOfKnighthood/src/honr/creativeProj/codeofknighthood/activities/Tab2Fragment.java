@@ -1,4 +1,4 @@
-package honr.creativeProj.codecfknighthood.activities;
+package honr.creativeProj.codeofknighthood.activities;
  
 import honr.creativeProj.codeofknighthood.R;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
  * @author mwho
  *
  */
-public class Tab3Fragment extends Fragment {
+public class Tab2Fragment extends Fragment {
     /** (non-Javadoc)
      * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
      */
@@ -29,6 +29,6 @@ public class Tab3Fragment extends Fragment {
             // the view hierarchy; it would just never be used.
             return null;
         }
-        return (LinearLayout)inflater.inflate(R.layout.tab_frag3_layout, container, false);
+        return (LinearLayout)inflater.inflate(R.layout.tab_frag2_layout, container, false);
     }
 }

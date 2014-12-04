@@ -1,4 +1,4 @@
-package honr.creativeProj.codecfknighthood.activities;
+package honr.creativeProj.codeofknighthood.activities;
  
 import honr.creativeProj.codeofknighthood.R;
 
