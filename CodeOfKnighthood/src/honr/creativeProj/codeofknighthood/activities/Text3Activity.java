@@ -1,34 +1,38 @@
 package honr.creativeProj.codeofknighthood.activities;
  
 import honr.creativeProj.codeofknighthood.R;
+import honr.creativeProj.codeofknighthood.backend.TextParser;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
+import android.widget.TextView;
  
- 
-/**
- * @author mwho
- *
- */
 public class Text3Activity extends Fragment {
-    /** (non-Javadoc)
-     * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-     */
+    
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         if (container == null) {
-            // We have different layouts, and in one of them this
-            // fragment's containing frame doesn't exist.  The fragment
-            // may still be created from its saved state, but there is
-            // no reason to try to create its view hierarchy because it
-            // won't be displayed.  Note this is not needed -- we could
-            // just run the code below, where we would create and return
-            // the view hierarchy; it would just never be used.
             return null;
         }
+		setText();
         return (ScrollView)inflater.inflate(R.layout.text3_activity, container, false);
     }
+    
+    private void setText(){ //TODO: make public method in another class with String parameter
+		String filename1, filename2,filename3;
+		String output1, output2, output3;
+		filename1="Text3_1"; filename2="Text3_2"; filename3="Text3_3";
+		output1=TextParser.parseFile(filename1);
+		output2=TextParser.parseFile(filename2);
+		output3=TextParser.parseFile(filename3);
+		TextView text1_1=(TextView) getView().findViewById(R.id.text3_1);
+		TextView text1_2=(TextView) getView().findViewById(R.id.text3_2);
+		TextView text1_3=(TextView) getView().findViewById(R.id.text3_3);
+		text1_1.setText(output1);
+		text1_2.setText(output2);
+		text1_3.setText(output3);
+	}
 }

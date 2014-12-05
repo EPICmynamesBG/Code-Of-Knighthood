@@ -2,11 +2,13 @@ package honr.creativeProj.codeofknighthood.activities;
 
 
 import honr.creativeProj.codeofknighthood.activities.PagerAdapter; 
+import honr.creativeProj.codeofknighthood.backend.TextParser;
 import honr.creativeProj.codeofknighthood.R;
 
 import java.util.List;
 import java.util.Vector;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -24,7 +26,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity{
         super.onCreate(savedInstanceState);
         setFullScreen();
         super.setContentView(R.layout.viewpager_layout);
-        //Initialize the pager
+		TextParser.setAssets(getAssets());
         this.initialisePaging();
     }
     
