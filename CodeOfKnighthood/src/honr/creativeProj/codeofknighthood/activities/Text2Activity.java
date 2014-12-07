@@ -13,8 +13,8 @@ public class Text2Activity extends Fragment {
     
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-    	View thisView = inflater.inflate(R.layout.text1_activity, container,false);
-    	FragmentTextSetter.setText(thisView, "Text1");
+    	View thisView = inflater.inflate(R.layout.text2_activity, container,false);
+    	FragmentTextSetter.setText(thisView, "Text2");
         return (ScrollView) thisView;
     }
 }
