@@ -1,38 +1,21 @@
 package honr.creativeProj.codeofknighthood.activities;
  
 import honr.creativeProj.codeofknighthood.R;
-import honr.creativeProj.codeofknighthood.backend.TextParser;
+import honr.creativeProj.codeofknighthood.viewManager.FragmentTextSetter;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
-import android.widget.TextView;
  
 public class Text3Activity extends Fragment {
     
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        if (container == null) {
-            return null;
-        }
-		setText();
-        return (ScrollView)inflater.inflate(R.layout.text3_activity, container, false);
+    	View thisView = inflater.inflate(R.layout.text1_activity, container,false);
+    	FragmentTextSetter.setText(thisView, "Text1");
+        return (ScrollView) thisView;
     }
     
-    private void setText(){ //TODO: make public method in another class with String parameter
-		String filename1, filename2,filename3;
-		String output1, output2, output3;
-		filename1="Text3_1"; filename2="Text3_2"; filename3="Text3_3";
-		output1=TextParser.parseFile(filename1);
-		output2=TextParser.parseFile(filename2);
-		output3=TextParser.parseFile(filename3);
-		TextView text1_1=(TextView) getView().findViewById(R.id.text3_1);
-		TextView text1_2=(TextView) getView().findViewById(R.id.text3_2);
-		TextView text1_3=(TextView) getView().findViewById(R.id.text3_3);
-		text1_1.setText(output1);
-		text1_2.setText(output2);
-		text1_3.setText(output3);
-	}
 }

@@ -25,7 +25,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity{
         super.onCreate(savedInstanceState);
         setFullScreen();
         super.setContentView(R.layout.viewpager_layout);
-		TextParser.setAssets(getAssets());
+        TextParser.setAssets(getAssets());
         this.initialisePaging();
     }
     
