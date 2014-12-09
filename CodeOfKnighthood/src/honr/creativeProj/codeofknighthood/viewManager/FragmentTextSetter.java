@@ -14,19 +14,23 @@ public class FragmentTextSetter{
 		int id1, id2, id3;
 		if(activityName=="Text1"){
 			filename1="Text1_1"; filename2="Text1_2"; filename3="Text1_3";
-			id1=R.id.text1_1; id2=R.id.text1_2; id3=R.id.text1_3;
+			id1=R.id.text1_header; id2=R.id.text1_2; id3=R.id.text1_3;
 		}
 		else if (activityName=="Text2"){
 			filename1="Text2_1"; filename2="Text2_2"; filename3="Text2_3";
-			id1=R.id.text2_1; id2=R.id.text2_2; id3=R.id.text2_3;
+			id1=R.id.text2_header; id2=R.id.text2_2; id3=R.id.text2_3;
 		}
 		else if(activityName=="Text3"){
 			filename1="Text3_1"; filename2="Text3_2"; filename3="Text3_3";
-			id1=R.id.text3_1; id2=R.id.text3_2; id3=R.id.text3_3;
+			id1=R.id.text3_header; id2=R.id.text3_2; id3=R.id.text3_3;
 		}
+		else if(activityName=="References"){
+			setReferencesText(view);
+			return;
+		}	
 		else{
 			filename1="Error"; filename2="Error"; filename3="Error";
-			id1=R.id.text1_1; id2=R.id.text1_2; id3=R.id.text1_3;
+			id1=R.id.text1_header; id2=R.id.text1_2; id3=R.id.text1_3;
 		}
 		output1=TextParser.parseFile(filename1);
 		output2=TextParser.parseFile(filename2);
@@ -37,5 +41,11 @@ public class FragmentTextSetter{
 		text1.setText(output1);
 		text2.setText(output2);
 		text3.setText(output3);
+	}
+
+	private static void setReferencesText(View view) {
+		String output=TextParser.parseFile("Resources");
+		TextView text=(TextView) view.findViewById(R.id.reference_1);
+		text.setText(output);
 	}
 }

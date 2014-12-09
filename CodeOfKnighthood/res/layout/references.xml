@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/references_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/topBottomMargins"
+        android:layout_marginLeft="@dimen/sideMargins"
+        android:layout_marginRight="@dimen/sideMargins"
+        android:layout_marginTop="@dimen/topBottomMargins" >
+
+        <TextView
+            android:id="@+id/reference_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/topBottomMargins"
+            android:layout_marginTop="@dimen/topBottomMargins"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text="@string/referencesHeader"
+            android:textColor="@color/textBlue"
+            android:textSize="@dimen/headerTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reference_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reference_header"
+            android:layout_marginBottom="@dimen/topBottomMargins"
+            android:scrollbars="vertical"
+            android:text="@string/text2"
+            android:textColor="@color/textBlue"
+            android:textSize="@dimen/textSize" />
+    </RelativeLayout>
+
+</ScrollView>

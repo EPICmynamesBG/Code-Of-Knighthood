@@ -13,32 +13,31 @@
         android:layout_marginBottom="@dimen/topBottomMargins"
         android:layout_marginLeft="@dimen/sideMargins"
         android:layout_marginRight="@dimen/sideMargins"
-        android:layout_marginTop="@dimen/topBottomMargins"
-         >
+        android:layout_marginTop="@dimen/topBottomMargins" >
 
         <TextView
-            android:id="@+id/text2_1"
+            android:id="@+id/text2_header"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:layout_marginTop="@dimen/topBottomMargins"
+            android:gravity="center"
             android:scrollbars="vertical"
             android:text="@string/text1"
             android:textColor="@color/textBlue"
-            android:textSize="@dimen/textSize"
+            android:textSize="@dimen/headerTextSize"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text2_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text2_1"
+            android:layout_below="@id/text2_header"
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text2"
             android:textColor="@color/textBlue"
-            android:textSize="@dimen/textSize"
-            android:textStyle="bold" />
+            android:textSize="@dimen/textSize" />
 
         <TextView
             android:id="@+id/text2_3"
@@ -49,8 +48,7 @@
             android:scrollbars="vertical"
             android:text="@string/text3"
             android:textColor="@color/textBlue"
-            android:textSize="@dimen/textSize"
-            android:textStyle="bold" />
+            android:textSize="@dimen/textSize" />
     </RelativeLayout>
 
 </ScrollView>
