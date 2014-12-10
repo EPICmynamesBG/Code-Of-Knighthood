@@ -24,6 +24,10 @@ public class FragmentTextSetter{
 			filename1="Text3_header"; filename2="Text3_2"; filename3="Text3_3";
 			id1=R.id.text3_header; id2=R.id.text3_2; id3=R.id.text3_3;
 		}
+		else if (activityName=="Text4"){
+			filename1="Text4_header"; filename2="Text4_2"; filename3="Text4_3";
+			id1=R.id.text4_header; id2=R.id.text4_2; id3=R.id.text4_3;
+		}
 		else if(activityName=="References"){
 			setReferencesText(view);
 			return;

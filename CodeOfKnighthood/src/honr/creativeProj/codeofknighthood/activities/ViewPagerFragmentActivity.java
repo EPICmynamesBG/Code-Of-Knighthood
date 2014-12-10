@@ -43,6 +43,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity{
         fragments.add(Fragment.instantiate(this, Text1Activity.class.getName()));
         fragments.add(Fragment.instantiate(this, Text2Activity.class.getName()));
         fragments.add(Fragment.instantiate(this, Text3Activity.class.getName()));
+        fragments.add(Fragment.instantiate(this, Text4Activity.class.getName()));
         fragments.add(Fragment.instantiate(this, ReferencesActivity.class.getName()));
         this.mPagerAdapter  = new PagerAdapter(super.getSupportFragmentManager(), fragments);
         //
