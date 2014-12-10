@@ -33,7 +33,7 @@
             android:contentDescription="@string/CDblank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/text1_header"
+            android:layout_below="@+id/text1_header"
             android:layout_centerHorizontal="true"
             android:src="@drawable/knight_and_car" />
 

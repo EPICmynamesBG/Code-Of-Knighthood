@@ -38,12 +38,21 @@
             android:text="@string/text2"
             android:textColor="@color/textBlue"
             android:textSize="@dimen/textSize" />
+        
+        <ImageView
+            android:id="@+id/knightAndHorse"
+            android:contentDescription="@string/CDblank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2_2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/knight_horse" />
 
         <TextView
             android:id="@+id/text2_3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text2_2"
+            android:layout_below="@id/knightAndHorse"
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text3"

@@ -1,1 +1,4 @@
-Test 2 3
+In order for a Knight to be sworn into Knighthood, the knight must swear his allegiance to the king and swear the following oaths:
+	>> Never do service with traitors
+	>> Never give bad counsel to a maiden; must treat her with respect and defend her
+	>> To observe fasts, hear mass every day and make an offering in Church

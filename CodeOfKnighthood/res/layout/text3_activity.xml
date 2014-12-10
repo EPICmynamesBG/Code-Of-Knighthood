@@ -27,12 +27,21 @@
             android:textColor="@color/textBlue"
             android:textSize="@dimen/headerTextSize"
             android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/daveFranco"
+            android:contentDescription="@string/CDblank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3_header"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/davefranco" />
 
         <TextView
             android:id="@+id/text3_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text3_header"
+            android:layout_below="@id/daveFranco"
             android:layout_marginBottom="@dimen/topBottomMargins"
             android:scrollbars="vertical"
             android:text="@string/text2"
