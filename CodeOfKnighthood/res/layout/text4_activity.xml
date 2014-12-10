@@ -6,7 +6,7 @@
     android:scrollbarAlwaysDrawVerticalTrack="true" >
 
     <RelativeLayout
-        android:id="@+id/text3_all"
+        android:id="@+id/text4_all"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
