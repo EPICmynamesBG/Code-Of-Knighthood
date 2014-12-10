@@ -11,5 +11,7 @@
     <string name="text2">Text 2</string>
     <string name="text3">Text 3</string>
     <string name="referencesHeader">References</string>
+    <string name="similarities">Similarities</string>
+    <string name="differences">Differences</string>
 
 </resources>
