@@ -5,6 +5,7 @@
     <string name="CDknight">Knight</string>
     <string name="CDshield">Shield</string>
     <string name="CDstarBorder"></string>
+    <string name="CDblank"></string>
     <string name="startButton">Begin the Quest!</string>
     <string name="text1">Text 1</string>
     <string name="text2">Text 2</string>
